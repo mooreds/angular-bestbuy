@@ -1,1 +1,13 @@
-{{deals.length}}
+There are {{deals.length}} deals.
+
+<ul>
+<li ng-repeat="deal in deals">
+  <img src="{{deal.image}}" />
+  {{deal.name}}
+  <ul>
+     <li ng-show="offer.text != null" ng-repeat="offer in deal.offers">
+        Offer: <a href='{{offer.url}}'>{{offer.text}}</a>
+     </li>
+  </ul>
+</li>
+</ul>
