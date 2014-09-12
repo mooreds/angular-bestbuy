@@ -10,7 +10,6 @@ describe('service', function() {
       expect(Deals).toBeDefined();
   }));
   it('check the existence of methods on deals', inject(function(Deals) {
-      expect(Deals.get).toBeDefined();
       expect(Deals.query).toBeDefined();
   }));
   
